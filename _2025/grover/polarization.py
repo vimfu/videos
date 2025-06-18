@@ -303,7 +303,7 @@ class BeamSplitter(InteractiveScene):
         self.wait()
 
         # Numbers of the 60 degree example
-        eq_60 = Tex(R"= 60^\circ")
+        eq_60 = Tex(R"= 60n^\circ")
 
         # A lot of lingering
 

@@ -41,7 +41,7 @@ def get_command(view, window):
     enter = False
 
     if row != scene_line_no:
-        cmds.append(f"-se {row + 1}")
+        cmds.append("-se " + str(row + 1))
         enter = True
 
     return " ".join(cmds), enter
@@ -110,7 +110,7 @@ def checkpoint_paste_wrapper(view, arg_str=""):
         command = view.substr(selected) if selected else first_line
     else:
         comment = first_line if starts_with_comment else "#"
-        command = f"checkpoint_paste({arg_str}) {comment} ({len(lines)} lines)"
+        command = "checkpoint_paste({}) {} ({} lines)".format(arg_str, comment, len(lines))
 
     # Clear selection and put cursor back to the start
     pos = sel[0].begin()

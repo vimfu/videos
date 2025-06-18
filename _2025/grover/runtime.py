@@ -1,6 +1,6 @@
 from manim_imports_ext import *
-from _2025.blocks_and_grover.qc_supplements import *
-from _2025.blocks_and_grover.state_vectors import DisectAQuantumComputer
+from _2025.grover.qc_supplements import *
+from _2025.grover.state_vectors import DisectAQuantumComputer
 
 
 class Quiz(InteractiveScene):

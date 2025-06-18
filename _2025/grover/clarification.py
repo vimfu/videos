@@ -1,5 +1,5 @@
 from manim_imports_ext import *
-from _2025.blocks_and_grover.qc_supplements import *
+from _2025.grover.qc_supplements import *
 
 
 default_sudoku_values = [  # TODO
@@ -125,7 +125,7 @@ class Intro(InteractiveScene):
         self.wait()
 
         # Comments
-        folder = Path('/Users/grant/3Blue1Brown Dropbox/3Blue1Brown/videos/2025/blocks_and_grover/Comments')
+        folder = Path('/Users/grant/3Blue1Brown Dropbox/3Blue1Brown/videos/2025/grover/Comments')
         comments = Group(
             Group(ImageMobject(folder / name))
             for name in os.listdir(folder)
